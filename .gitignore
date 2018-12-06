@@ -2,3 +2,4 @@ development.sqlite*
 log/*
 test/*
 tmp/*
+helper/*
