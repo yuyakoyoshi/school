@@ -1,0 +1,4 @@
+development.sqlite*
+log/*
+test/controllers/*
+tmp/*
