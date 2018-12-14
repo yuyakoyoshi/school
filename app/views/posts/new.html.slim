@@ -1,0 +1,14 @@
+h1
+  | Posts#new
+p
+  | Find me in app/views/posts/new.html.erb
+h1
+  | 新規投稿
+= form_for(@post) do |f|
+  h4
+    | タイトル
+  = f.text_field :title
+  h4
+    | 本文
+  = f.text_area :body
+  = f.submit '投稿'
