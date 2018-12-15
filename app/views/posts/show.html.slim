@@ -6,3 +6,5 @@ h2
   | 本文
 p
   = @post.body
+span
+  = link_to '編集', edit_post_path(@post.id)
