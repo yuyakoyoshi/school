@@ -3,3 +3,4 @@ log/*
 test/*
 tmp/*
 helper/*
+app/views/*/*.erb

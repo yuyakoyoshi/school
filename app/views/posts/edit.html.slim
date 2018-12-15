@@ -1,0 +1,10 @@
+h1
+  | 編集画面
+= form_for(@post) do |f|
+  h4
+    |タイトル
+  = f.text_field :title
+  h4
+    |本文
+  = f.text_area :body
+  = f.submit '保存'
