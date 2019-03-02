@@ -50,6 +50,11 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'slim-rails'
   gem 'html2slim'
+  gem "refile", require: "refile/rails", github: 'manfe/refile'
+  gem "refile-mini_magick"
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-byebug'
 end
 
 group :test do

@@ -5,3 +5,7 @@ h1
     | タイトル
   span
     =link_to post.title, post_path(post.id)
+
+  p
+    | 画像
+  = attachment_image_tag post, :image, :fill, 100, 100, format: 'jpeg'

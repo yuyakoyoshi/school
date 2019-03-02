@@ -8,6 +8,11 @@ h1
   h4
     | タイトル
   = f.text_field :title
+
+  h4
+    | 画像
+  = f.attachment_field :image
+
   h4
     | 本文
   = f.text_area :body
