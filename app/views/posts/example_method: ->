@@ -1,0 +1,33 @@
+example_method: ->
+  $.ajax
+    url: ‘URL’
+    type: ‘GET’
+    @setLoadingIcon()
+  .done =>
+    成功時の処理
+  .always =>
+    @removeLoadingIcon()
+setLoadingIcon: ->
+  $(‘.body).addClass('click__disable')
+  $(‘.example__class).prepend(‘<div class="loading__icon"></div>‘)
+removeLoadingIcon: ->
+  $(‘.search__modal’).removeClass('click__disable’)
+  $(‘.loading__icon).remove()
+
+.click__disable {
+  background-color: #fff;
+  opacity: 0.7;
+  pointer-events : none;
+  .loading__icon {
+    width: 40px;
+    height: 40px;
+    background: image-url('loading.gif') no-repeat;
+    background-size: 40px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+  }
+}
