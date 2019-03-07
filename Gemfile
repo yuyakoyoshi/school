@@ -55,6 +55,7 @@ group :development do
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-byebug'
+  gem 'rails-i18n', '~> 5.1'
 end
 
 group :test do
